@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  image_proxy:
+    build: .
+    environment:
+      - IMAGEPROXY_PORT=123
+      - IMAGEPROXY_PROXY=
+    ports:
+      - 8080:123
